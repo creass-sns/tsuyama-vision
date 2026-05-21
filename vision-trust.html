@@ -108,7 +108,24 @@ h2 .light{font-weight:400;color:#4a6fa5}
   background:#0a2540;color:#7fc8f0;
   padding:8px 20px;border-radius:24px;
   font-size:12px;letter-spacing:.2em;font-weight:600;
-  margin-bottom:24px;
+  margin-bottom:8px;
+}
+.realm-tag{
+  display:inline-block;
+  padding:6px 16px;border-radius:24px;
+  font-size:11px;letter-spacing:.12em;font-weight:600;
+  margin-bottom:24px;margin-left:8px;
+  vertical-align:middle;
+}
+.realm-tag.political{
+  background:#fff;color:#0a2540;border:1px solid #2c5f8d;
+}
+.realm-tag.administrative{
+  background:#f0f7ff;color:#2c5f8d;border:1px solid #2c5f8d;
+}
+.realm-tag.mixed{
+  background:linear-gradient(90deg,#fff 50%,#f0f7ff 50%);
+  color:#0a2540;border:1px solid #2c5f8d;
 }
 .layer-body{
   display:grid;grid-template-columns:1.2fr 1fr;gap:48px;align-items:start;margin-top:48px;
@@ -364,7 +381,7 @@ h2 .light{font-weight:400;color:#4a6fa5}
     <div class="hero-meta">
       <div><strong>提示</strong>株式会社CREASS／児玉聡志</div>
       <div><strong>提示先</strong>光井さとし 津山市長</div>
-      <div><strong>バージョン</strong>v0.5（2026年5月）</div>
+      <div><strong>バージョン</strong>v0.6（2026年5月）</div>
     </div>
   </div>
 </section>
@@ -391,9 +408,9 @@ h2 .light{font-weight:400;color:#4a6fa5}
     </div>
 
     <div class="context-box">
-      <div class="label">CONTEXT 03 ／ 津山市の根本課題（5/21 MTGで共有いただいた認識）</div>
-      <h3>「発信力がないこと自体が、津山市の課題」</h3>
-      <p>市長から共有いただいた問題意識は2軸。<strong>①どんなにいい施策をしても伝わっていない発信力の課題</strong>、そして <strong>②「どうせ市長が決めるんでしょ」と言わせない、ボトムアップの組織風土をつくる課題</strong>。この2軸が同時に動かないと、津山は変わりません。本提案は、その両輪に効く設計にしています。</p>
+      <div class="label">CONTEXT 03 ／ 津山市の課題</div>
+      <h3>「発信力」と「ボトムアップ文化」、両輪で取り組む。</h3>
+      <p>津山が抱える課題は2軸。<strong>①どんなにいい施策をしても伝わっていない、発信力の課題</strong>、そして <strong>②ボトムアップの組織風土をつくる課題</strong>。この2軸が同時に動かないと、津山は変わりません。本提案は、その両輪に効く設計にしています。</p>
     </div>
 
     <div class="shi-grid">
@@ -419,9 +436,10 @@ h2 .light{font-weight:400;color:#4a6fa5}
 <section class="layer">
   <div class="container">
     <span class="layer-tag">LAYER 1 ／ YEAR 1（2026）</span>
+    <span class="realm-tag political">主に 政務領域（Phase 1）</span>
     <h2>市長と わかものC.C. の発信を、<span class="light">「市政を動かすメディア」に。</span></h2>
     <p class="lead">
-      まず1年目。光井市長の個人発信と、わかものC.C. の活動発信。この2本を、選挙運動の延長や記録広報ではなく、<strong>市政運営のインフラ</strong>として再設計します。CREASSは黒子として、必要なときだけ前に出る伴走パートナーに徹します。
+      まず1年目。<strong>政務領域（政治家・光井さとし個人の発信）からスタート</strong>し、必要な場面でわかものC.C. の活動にも軽く伴走します。Phase 1 の支出源は <strong>後援会・関連法人経由</strong> とし、市の予算は使いません。CREASSは黒子として、必要なときだけ前に出る伴走パートナーに徹します。
     </p>
     <div class="layer-body">
       <ul class="layer-points">
@@ -467,9 +485,10 @@ h2 .light{font-weight:400;color:#4a6fa5}
 <section class="layer">
   <div class="container">
     <span class="layer-tag">LAYER 2 ／ YEAR 2-3（2027-2028）</span>
+    <span class="realm-tag administrative">公務領域に本格拡張（Phase 2）</span>
     <h2>高校生と わかものC.C. が、<span class="light">街の魅力を発信し続ける。</span></h2>
     <p class="lead">
-      2-3年目で本丸を立ち上げる。<strong>津山市×CREASS高校生クリエイター育成プログラム</strong>を市の公設プログラムとして公教育に組み込み、<strong>わかものC.C. 自身も発信スキルを内製化</strong>する。「育てる×発信する」サイクルを、市の内側に常駐させます。
+      2-3年目で本丸を立ち上げる。<strong>公務領域（市の予算＋補助金）に拡張し</strong>、津山ブランディング × クリエイターズネットを本格稼働させます。出島氏×津山商業の取り組みを起点に、わかものC.C. とも「10中2」の節度で連動。「育てる×発信する」サイクルを、市の内側に常駐させます。
     </p>
     <div class="layer-body">
       <ul class="layer-points">
@@ -518,6 +537,7 @@ h2 .light{font-weight:400;color:#4a6fa5}
 <section class="layer">
   <div class="container">
     <span class="layer-tag">LAYER 3 ／ YEAR 3-4（2028-2029）</span>
+    <span class="realm-tag administrative">公務領域の深化（Phase 2 +）</span>
     <h2>「津山で育てたい・働きたい」が<span class="light">、街の景色になる。</span></h2>
     <p class="lead">
       3-4年目はサイクルが回り始める。<strong>市長発信×高校生育成×わかものC.C.内製化×外部クリエイター誘致</strong>が連動し、「移住・進学・就職」の入口が津山に流れ込む構造に変わっていきます。
