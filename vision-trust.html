@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>2026 → 2030 津山が変わっていく｜CREASS × 光井市政 × わかものC.C.</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic UI","Meiryo",sans-serif;
+  background:#fafbfc;
+  color:#1a2238;
+  line-height:1.75;
+  font-feature-settings:"palt";
+  letter-spacing:.02em;
+}
+.container{max-width:1080px;margin:0 auto;padding:0 32px}
+section{padding:120px 0;border-bottom:1px solid #e8eef5}
+section:last-child{border-bottom:none}
+
+/* Hero */
+.hero{
+  min-height:100vh;
+  background:linear-gradient(135deg,#0a2540 0%,#1e3a5f 50%,#2c5f8d 100%);
+  color:#fff;
+  display:flex;
+  align-items:center;
+  position:relative;
+  overflow:hidden;
+  padding:80px 0;
+}
+.hero::before{
+  content:"";position:absolute;top:0;left:0;right:0;bottom:0;
+  background:radial-gradient(circle at 80% 20%,rgba(255,255,255,.08),transparent 50%),
+             radial-gradient(circle at 20% 80%,rgba(255,255,255,.05),transparent 50%);
+}
+.hero .container{position:relative;z-index:1}
+.hero-eyebrow{
+  font-size:13px;letter-spacing:.3em;color:#8fb8e0;
+  margin-bottom:32px;font-weight:500;
+}
+.hero h1{
+  font-size:64px;font-weight:700;line-height:1.3;
+  margin-bottom:32px;letter-spacing:-.01em;
+}
+.hero h1 .accent{color:#7fc8f0;display:block;font-size:32px;font-weight:400;margin-top:16px;letter-spacing:.05em;line-height:1.5}
+.hero-sub{font-size:18px;color:#c5d6e8;max-width:720px;margin-bottom:48px}
+.hero-tagline{
+  background:rgba(127,200,240,.1);border-left:3px solid #7fc8f0;
+  padding:20px 24px;border-radius:0 8px 8px 0;
+  font-size:15px;color:#c5d6e8;max-width:720px;margin-bottom:64px;
+}
+.hero-tagline strong{color:#7fc8f0;display:block;margin-bottom:6px;letter-spacing:.05em}
+.hero-meta{
+  display:flex;gap:48px;padding-top:48px;border-top:1px solid rgba(255,255,255,.15);
+  font-size:13px;color:#8fb8e0;letter-spacing:.1em;flex-wrap:wrap;
+}
+.hero-meta strong{color:#fff;display:block;font-size:15px;margin-bottom:4px;letter-spacing:.05em}
+
+/* Section headings */
+.eyebrow{
+  font-size:12px;letter-spacing:.3em;color:#4a6fa5;
+  margin-bottom:20px;font-weight:600;text-transform:uppercase;
+}
+h2{
+  font-size:42px;font-weight:700;line-height:1.4;
+  margin-bottom:24px;letter-spacing:-.01em;color:#0a2540;
+}
+h2 .light{font-weight:400;color:#4a6fa5}
+.lead{font-size:18px;color:#516580;margin-bottom:48px;max-width:760px}
+
+/* Starting Point */
+.context-box{
+  background:#fff;border:1px solid #d0e3f5;border-radius:8px;
+  padding:36px 40px;margin-bottom:48px;
+  border-left:4px solid #4a6fa5;
+}
+.context-box .label{
+  font-size:11px;letter-spacing:.2em;color:#4a6fa5;font-weight:700;
+  margin-bottom:12px;text-transform:uppercase;
+}
+.context-box h3{font-size:22px;font-weight:700;margin-bottom:14px;color:#0a2540}
+.context-box p{font-size:15px;color:#516580;line-height:1.85}
+.context-box .quote{
+  font-size:14px;color:#0a2540;font-style:italic;
+  background:#f0f7ff;padding:14px 18px;border-radius:6px;
+  margin-top:16px;
+}
+
+.shi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:32px}
+.shi-card{
+  background:#fff;padding:36px 28px;border-radius:8px;
+  border:1px solid #e8eef5;
+}
+.shi-num{
+  font-size:56px;font-weight:300;color:#7fc8f0;
+  line-height:1;margin-bottom:16px;
+}
+.shi-card h3{font-size:17px;font-weight:700;margin-bottom:10px;color:#0a2540;line-height:1.5}
+.shi-card p{font-size:14px;color:#516580;line-height:1.7}
+
+/* Layer sections */
+.layer{position:relative}
+.layer-tag{
+  display:inline-block;
+  background:#0a2540;color:#7fc8f0;
+  padding:8px 20px;border-radius:24px;
+  font-size:12px;letter-spacing:.2em;font-weight:600;
+  margin-bottom:24px;
+}
+.layer-body{
+  display:grid;grid-template-columns:1.2fr 1fr;gap:48px;align-items:start;margin-top:48px;
+}
+.layer-points{list-style:none}
+.layer-points li{
+  padding:24px 0;border-bottom:1px solid #e8eef5;
+  display:flex;gap:20px;
+}
+.layer-points li:last-child{border-bottom:none}
+.layer-points .num{
+  font-size:13px;font-weight:700;color:#4a6fa5;
+  flex-shrink:0;width:36px;letter-spacing:.1em;
+}
+.layer-points .text strong{display:block;font-size:16px;font-weight:600;margin-bottom:6px;color:#0a2540;line-height:1.5}
+.layer-points .text span{font-size:14px;color:#516580;line-height:1.75}
+.layer-points .text .badge{
+  display:inline-block;background:#f0f7ff;color:#2c5f8d;
+  padding:2px 10px;border-radius:4px;font-size:11px;
+  margin-left:8px;font-weight:600;letter-spacing:.05em;
+}
+
+.layer-visual{
+  background:linear-gradient(135deg,#f0f7ff 0%,#e1efff 100%);
+  padding:40px 32px;border-radius:8px;
+  border:1px solid #d0e3f5;position:sticky;top:32px;
+}
+.layer-visual .label{
+  font-size:11px;letter-spacing:.2em;color:#4a6fa5;
+  margin-bottom:14px;font-weight:600;
+}
+.layer-visual .big{
+  font-size:26px;font-weight:700;line-height:1.4;
+  margin-bottom:16px;color:#0a2540;
+}
+.layer-visual .small{font-size:14px;color:#516580;line-height:1.75}
+
+/* Spiral cycle */
+.cycle-section{background:#f5f9fd}
+.spiral-wrapper{
+  display:grid;grid-template-columns:1fr 1.4fr;gap:48px;
+  align-items:center;margin-top:48px;
+}
+.spiral-svg{width:100%;height:auto;max-width:420px;display:block;margin:0 auto}
+.spiral-explain h3{font-size:22px;font-weight:700;color:#0a2540;margin-bottom:20px}
+.spiral-explain ul{list-style:none}
+.spiral-explain li{
+  display:flex;gap:16px;padding:16px 0;
+  border-bottom:1px solid #e8eef5;
+}
+.spiral-explain li:last-child{border-bottom:none}
+.spiral-explain .y{
+  font-size:11px;color:#4a6fa5;letter-spacing:.15em;
+  font-weight:700;flex-shrink:0;width:72px;line-height:1.7;
+}
+.spiral-explain .t{font-size:14px;color:#1a2238;line-height:1.7}
+.spiral-explain .t strong{display:block;font-size:15px;color:#0a2540;margin-bottom:4px}
+
+/* Reference */
+.ref{
+  background:#fff;border-left:3px solid #4a6fa5;
+  padding:32px 36px;margin-top:32px;
+  border-radius:0 8px 8px 0;
+}
+.ref-label{
+  font-size:11px;letter-spacing:.2em;color:#4a6fa5;
+  font-weight:600;margin-bottom:12px;
+}
+.ref h3{font-size:20px;font-weight:600;margin-bottom:12px;color:#0a2540}
+.ref p{font-size:15px;color:#516580;line-height:1.85}
+.ref .tag{
+  display:inline-block;background:#f0f7ff;color:#2c5f8d;
+  padding:4px 12px;border-radius:4px;
+  font-size:12px;margin-right:8px;margin-top:12px;font-weight:500;
+}
+
+/* Future scene */
+.future{background:linear-gradient(180deg,#fafbfc 0%,#f0f7ff 100%)}
+.future-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:48px}
+.future-item{
+  background:#fff;padding:36px 32px;border-radius:8px;
+  border:1px solid #e8eef5;
+}
+.future-item .scene-year{
+  font-size:13px;font-weight:600;color:#7fc8f0;letter-spacing:.15em;
+  margin-bottom:12px;
+}
+.future-item h3{font-size:20px;font-weight:700;margin-bottom:14px;color:#0a2540;line-height:1.5}
+.future-item p{font-size:14px;color:#516580;line-height:1.85}
+
+/* Last */
+.last{background:#0a2540;color:#fff;text-align:center}
+.last .eyebrow{color:#7fc8f0}
+.last h2{color:#fff}
+.last .lead{color:#c5d6e8;margin:0 auto 48px}
+.last-steps{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:20px;
+  max-width:1000px;margin:0 auto 48px;
+}
+.last-step{
+  background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.15);
+  padding:28px 22px;border-radius:8px;text-align:left;
+}
+.last-step .step-no{
+  font-size:11px;color:#7fc8f0;letter-spacing:.2em;font-weight:600;
+  margin-bottom:12px;
+}
+.last-step h4{font-size:15px;font-weight:600;margin-bottom:8px;color:#fff}
+.last-step p{font-size:13px;color:#c5d6e8;line-height:1.7}
+.signature{
+  margin-top:64px;padding-top:48px;
+  border-top:1px solid rgba(255,255,255,.15);
+  font-size:13px;color:#8fb8e0;letter-spacing:.05em;
+}
+.signature strong{display:block;font-size:18px;color:#fff;margin-bottom:8px;letter-spacing:.02em}
+
+@media(max-width:840px){
+  .hero h1{font-size:38px}
+  .hero h1 .accent{font-size:22px}
+  h2{font-size:28px}
+  .shi-grid,.future-grid,.last-steps,.layer-body,.spiral-wrapper{grid-template-columns:1fr;gap:20px}
+  .last-steps{gap:16px}
+  .hero-meta{flex-direction:column;gap:20px}
+  section{padding:80px 0}
+  .layer-visual{position:static}
+}
+
+/* ============ PRINT (A4 landscape, slide per section) ============ */
+@media print {
+  @page {
+    size: A4 landscape;
+    margin: 0;
+  }
+  *, *::before, *::after {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    color-adjust: exact !important;
+  }
+  html, body {
+    background: #fafbfc !important;
+    color: #1a2238 !important;
+  }
+  .container { max-width: none; padding: 0 56px; }
+
+  section {
+    page-break-before: always;
+    page-break-after: always;
+    page-break-inside: avoid;
+    border-bottom: none !important;
+    padding: 36px 0 !important;
+    min-height: 100vh;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+  section > .container { width: 100%; }
+  section:first-child { page-break-before: avoid; }
+
+  /* Hero */
+  .hero { min-height: 100vh; padding: 36px 0 !important; }
+  .hero h1 { font-size: 44px !important; margin-bottom: 22px !important; }
+  .hero h1 .accent { font-size: 22px !important; margin-top: 12px !important; }
+  .hero-sub { font-size: 14px !important; margin-bottom: 22px !important; }
+  .hero-tagline { padding: 14px 18px !important; font-size: 12px !important; margin-bottom: 28px !important; }
+  .hero-meta { padding-top: 22px !important; gap: 32px !important; font-size: 11px !important; }
+  .hero-meta strong { font-size: 13px !important; }
+  .hero-eyebrow { font-size: 11px !important; margin-bottom: 18px !important; }
+
+  /* Headings */
+  h2 { font-size: 28px !important; margin-bottom: 16px !important; line-height: 1.35 !important; }
+  .lead { font-size: 14px !important; margin-bottom: 24px !important; line-height: 1.7 !important; }
+  .eyebrow { font-size: 10px !important; margin-bottom: 12px !important; }
+
+  /* Starting Point */
+  .context-box { padding: 16px 22px !important; margin-bottom: 16px !important; }
+  .context-box h3 { font-size: 15px !important; margin-bottom: 8px !important; line-height: 1.5 !important; }
+  .context-box p { font-size: 12px !important; line-height: 1.65 !important; }
+  .context-box .quote { font-size: 11px !important; padding: 8px 12px !important; margin-top: 8px !important; }
+  .context-box .label { font-size: 9px !important; margin-bottom: 6px !important; }
+  .shi-grid { gap: 12px !important; margin-top: 16px !important; }
+  .shi-card { padding: 16px 16px !important; }
+  .shi-num { font-size: 34px !important; margin-bottom: 6px !important; }
+  .shi-card h3 { font-size: 13px !important; margin-bottom: 6px !important; line-height: 1.4 !important; }
+  .shi-card p { font-size: 11px !important; line-height: 1.6 !important; }
+
+  /* Layers */
+  .layer-tag { font-size: 10px !important; padding: 5px 14px !important; margin-bottom: 14px !important; }
+  .layer-body { gap: 28px !important; margin-top: 22px !important; }
+  .layer-points li { padding: 11px 0 !important; gap: 14px !important; page-break-inside: avoid; }
+  .layer-points .num { font-size: 11px !important; width: 26px !important; }
+  .layer-points .text strong { font-size: 13px !important; margin-bottom: 3px !important; line-height: 1.4 !important; }
+  .layer-points .text span { font-size: 11px !important; line-height: 1.55 !important; }
+  .layer-points .text .badge { font-size: 9px !important; padding: 1px 7px !important; margin-left: 5px !important; }
+  .layer-visual { padding: 20px 18px !important; position: static !important; }
+  .layer-visual .label { font-size: 9px !important; margin-bottom: 8px !important; }
+  .layer-visual .big { font-size: 18px !important; margin-bottom: 10px !important; line-height: 1.4 !important; }
+  .layer-visual .small { font-size: 11px !important; line-height: 1.55 !important; }
+
+  /* Spiral */
+  .spiral-wrapper { gap: 28px !important; margin-top: 22px !important; }
+  .spiral-svg { max-width: 260px !important; }
+  .spiral-explain h3 { font-size: 15px !important; margin-bottom: 12px !important; }
+  .spiral-explain li { padding: 8px 0 !important; gap: 12px !important; }
+  .spiral-explain .y { font-size: 10px !important; width: 64px !important; }
+  .spiral-explain .t { font-size: 11px !important; line-height: 1.55 !important; }
+  .spiral-explain .t strong { font-size: 12px !important; margin-bottom: 2px !important; }
+
+  /* Reference */
+  .ref { padding: 18px 22px !important; margin-top: 18px !important; }
+  .ref h3 { font-size: 15px !important; margin-bottom: 6px !important; }
+  .ref p { font-size: 11px !important; line-height: 1.65 !important; }
+  .ref-label { font-size: 9px !important; margin-bottom: 6px !important; }
+  .ref .tag { font-size: 10px !important; padding: 2px 8px !important; margin-top: 6px !important; }
+
+  /* Future Scene */
+  .future-grid { gap: 14px !important; margin-top: 20px !important; }
+  .future-item { padding: 18px 20px !important; }
+  .future-item .scene-year { font-size: 10px !important; margin-bottom: 6px !important; }
+  .future-item h3 { font-size: 14px !important; margin-bottom: 8px !important; line-height: 1.45 !important; }
+  .future-item p { font-size: 11px !important; line-height: 1.65 !important; }
+
+  /* Last */
+  .last-steps { gap: 14px !important; margin: 0 auto 24px !important; }
+  .last-step { padding: 18px 14px !important; }
+  .last-step .step-no { font-size: 10px !important; margin-bottom: 6px !important; }
+  .last-step h4 { font-size: 12px !important; margin-bottom: 4px !important; }
+  .last-step p { font-size: 11px !important; line-height: 1.55 !important; }
+  .signature { margin-top: 24px !important; padding-top: 20px !important; font-size: 11px !important; }
+  .signature strong { font-size: 15px !important; margin-bottom: 4px !important; }
+}
+</style>
+</head>
+<body>
+
+<section class="hero">
+  <div class="container">
+    <div class="hero-eyebrow">CREASS × 光井市政 × わかものC.C. ／ VISION 2026 — 2030</div>
+    <h1>
+      声を、カタチに。
+      <span class="accent">「津山で育てたい」「津山で働きたい」と思うサイクルを、4年で。</span>
+    </h1>
+    <p class="hero-sub">
+      2026年5月、光井さとし市政は「わかものC.C.（共創施策検討チーム）」を発足させました。<br>
+      この出発に、外部の伴走パートナーとしてご一緒したい未来像をお届けします。
+    </p>
+    <div class="hero-tagline">
+      <strong>本資料の位置づけ</strong>
+      光井市政が掲げる「3つの志」と、わかものC.C.が掲げる「声を、カタチに。」<br>
+      この2つの旗印を、4年間で「市民が日常で感じる景色」に変えていくロードマップ案です。
+    </div>
+    <div class="hero-meta">
+      <div><strong>提示</strong>株式会社CREASS／児玉聡志</div>
+      <div><strong>提示先</strong>光井さとし 津山市長</div>
+      <div><strong>バージョン</strong>v0.4（2026年5月）</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="eyebrow">STARTING POINT — 現在地</div>
+    <h2>2026年5月、津山は<span class="light">「動き出す側」</span>に立っている。</h2>
+    <p class="lead">
+      光井市政には、すでに2本の旗が立っています。私たちCREASSは、この2本の旗を「市民が日常で感じる景色」に翻訳していく実装パートナーとして、ご一緒したい。
+    </p>
+
+    <div class="context-box">
+      <div class="label">CONTEXT 01 ／ 光井市政「3つの志」</div>
+      <h3>「子どもに、最高の教育を」「働くひとに、多様で自分らしい生き方を」「すべてのひとに、安心な医療と福祉を」</h3>
+      <p>選挙戦で掲げ、市民が選んだ3つの志。CREASSが直接接続できるのは、特に第3章「教育」と第4章「企業＆起業支援」。AIやICTを活用した個別最適な探究学習、産学官連携の強化、家業を持つ中高生向け公開授業（アトツギ）、起業塾 津山——いずれもCREASS事業の中核領域と重なります。</p>
+    </div>
+
+    <div class="context-box">
+      <div class="label">CONTEXT 02 ／ わかものC.C. の発足（2026年5月15日）</div>
+      <h3>市役所の若手・中堅職員11人による部署横断型・共創施策検討チーム</h3>
+      <p>「声を、カタチに。」のキャッチフレーズのもと、ワークショップ・100人インタビュー・市長と座談会（7月〜）・市長報告会（11月）を予定。CREASSが提案する「街の声を聴き、コンテンツに変えて、市政に返す」プロセスと、ベクトルが完全に一致しています。</p>
+      <div class="quote">「小さな挑戦でも大きな意味があるもの。前例や慣例にとらわれることなく、自由な発想で、ぜひ楽しんで取り組んでほしい。」<br>—— 光井市長 発足式メッセージ</div>
+    </div>
+
+    <div class="shi-grid">
+      <div class="shi-card">
+        <div class="shi-num">01</div>
+        <h3>子どもに、最高の教育を</h3>
+        <p>AI・ICT個別最適探究学習、産学官連携、地域資源を生かした県立高校カリキュラム支援。</p>
+      </div>
+      <div class="shi-card">
+        <div class="shi-num">02</div>
+        <h3>働くひとに、多様で自分らしい生き方を</h3>
+        <p>家業の後継者、新しく挑戦する若手を支える「起業塾 津山」、後継者×起業 共創プラットフォーム。</p>
+      </div>
+      <div class="shi-card">
+        <div class="shi-num">03</div>
+        <h3>すべてのひとに、安心な医療と福祉を</h3>
+        <p>地域包括ケア、健康寿命日本一、誰も取り残さない共生社会。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="layer">
+  <div class="container">
+    <span class="layer-tag">LAYER 1 ／ YEAR 1（2026）</span>
+    <h2>市長と わかものC.C. の発信を、<span class="light">「市政を動かすメディア」に。</span></h2>
+    <p class="lead">
+      まず1年目。光井市長の個人発信と、わかものC.C. の活動発信。この2本を、選挙運動の延長や記録広報ではなく、<strong>市政運営のインフラ</strong>として再設計します。CREASSは黒子として、必要なときだけ前に出る伴走パートナーに徹します。
+    </p>
+    <div class="layer-body">
+      <ul class="layer-points">
+        <li>
+          <span class="num">01</span>
+          <span class="text">
+            <strong>光井市長の個人発信を「現職モード」に再設計</strong>
+            <span>選挙時のストリートインタビュー手法を、市長就任後のフォーマットに作り直す。「市民の声を聴く市長」シリーズを、月2-4本のペースで企画から発信まで伴走します。</span>
+          </span>
+        </li>
+        <li>
+          <span class="num">02</span>
+          <span class="text">
+            <strong>市長目線で「津山の街」をPRする発信</strong>
+            <span>市長個人の人格発信（#01）とは別軸で、「市長が見ている津山」を切り口にした街PRコンテンツを企画。地場の食・職人・風景・若者の挑戦——市長の視線がそのまま津山ブランディングのレンズになる発信を、月2-4本のシリーズとして組み立てます。</span>
+          </span>
+        </li>
+        <li>
+          <span class="num">03</span>
+          <span class="text">
+            <strong>「市長と座談会」（7月〜）の現場とコンテンツ化を伴走</strong>
+            <span class="badge">わかものC.C.連動</span>
+            <span>わかものC.C. の活動として予定されている「市長と座談会」を、CREASSが現場設計（テーマ／参加者導線／写真・動画記録）とSNS展開で支援。「風通しの良い市政」の景色を市民にリアルタイムで届けます。</span>
+          </span>
+        </li>
+        <li>
+          <span class="num">04</span>
+          <span class="text">
+            <strong>市長の「説明したい」を1枚資料に変える伴走</strong>
+            <span>市長が部長会議・議会・市民説明会で「これ伝えたい」と感じた瞬間に、CREASSが裏で1枚資料に整える体制。市長は資料作成の手間ゼロで、施策を「見せて動かす」サイクルに集中できます。</span>
+          </span>
+        </li>
+      </ul>
+      <div class="layer-visual">
+        <div class="label">1年目アウトプット目安</div>
+        <div class="big">月2-4本の<br>市長・C.C.コンテンツ<br>＋年間KPI設計</div>
+        <div class="small">市長個人アカウント、市公式インスタグラム（わかものC.C.発信）、座談会のリアルタイム発信。CREASSが裏方で品質と継続性を担保します。数値KPIは初回MTG後に市長と擦り合わせます。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="layer">
+  <div class="container">
+    <span class="layer-tag">LAYER 2 ／ YEAR 2-3（2027-2028）</span>
+    <h2>高校生と わかものC.C. が、<span class="light">街の魅力を発信し続ける。</span></h2>
+    <p class="lead">
+      2-3年目で本丸を立ち上げる。<strong>津山市×CREASS高校生クリエイター育成プログラム</strong>を市の公設プログラムとして公教育に組み込み、<strong>わかものC.C. 自身も発信スキルを内製化</strong>する。「育てる×発信する」サイクルを、市の内側に常駐させます。
+    </p>
+    <div class="layer-body">
+      <ul class="layer-points">
+        <li>
+          <span class="num">01</span>
+          <span class="text">
+            <strong>ストリートインタビュー部</strong>
+            <span class="badge">100人インタビュー連動</span>
+            <span>選挙SNS戦略で実証済みのフォーマットを、地域ブランディングに転用。高校生が津山駅で街の声を聴き、わかものC.C. の100人インタビューとも連動。「市民の声」が双方向に流通する仕組みに。</span>
+          </span>
+        </li>
+        <li>
+          <span class="num">02</span>
+          <span class="text">
+            <strong>セトフラ × 高校生 アトツギ取材部</strong>
+            <span class="badge">岡山ネットワーク</span>
+            <span>岡山のローカルメディア「セトフラ」（共同代表・山田氏）と連携。津山の家業・中小企業オーナーを高校生が取材し、セトフラと津山市の双方で発信。岡山県内のローカルメディアと共同編集することで、津山外への自然な情報流通が生まれます。</span>
+          </span>
+        </li>
+        <li>
+          <span class="num">03</span>
+          <span class="text">
+            <strong>「高校SNS日本一モデル」の津山版チーム</strong>
+            <span class="badge">CREASS実証済み</span>
+            <span>各校の公式アカウントを個別にテコ入れするのではなく、<strong>市内5校から有志を集めた横断チーム</strong>を編成し、独自のコンテンツ戦略を展開します。学校公式の発信制約に縛られず、生徒個人としての発信力が育つ設計。生徒は表現の場を得て、学校は無理なくPR効果を享受、市は若者の街への愛着を可視化できる——三方良し（win-win-win）の構造です。</span>
+          </span>
+        </li>
+        <li>
+          <span class="num">04</span>
+          <span class="text">
+            <strong>わかものC.C. メンバーのSNS戦略 伴走支援</strong>
+            <span class="badge">内製化支援</span>
+            <span>わかものC.C. 11名と関連部署職員に対して、SNS戦略を伴走支援。職員が自前で動かせる領域を広げることで、CREASSとの共同チームの「総コンテンツ量」が増えていく設計です。職員が育つほど、CREASSは新しい挑戦に手を伸ばせるようになります。</span>
+          </span>
+        </li>
+      </ul>
+      <div class="layer-visual">
+        <div class="label">2-3年目アウトプット目安</div>
+        <div class="big">受講高校5校<br>生徒延べ60名規模<br>市内発信総量 倍以上</div>
+        <div class="small">津山市内の高校は5校（津山高校・津山東高校・津山工業高校・津山商業高校／美作高校）。各校から5-10名×5校で延べ60名規模の受講を想定。市外へのアテンション増加・市内高校の志願者数モニタリング・受講生の「津山で働きたい」進路意向の継続計測。具体数値は1年目MTGで市と擦り合わせて目標化します。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="layer">
+  <div class="container">
+    <span class="layer-tag">LAYER 3 ／ YEAR 3-4（2028-2029）</span>
+    <h2>「津山で育てたい・働きたい」が<span class="light">、街の景色になる。</span></h2>
+    <p class="lead">
+      3-4年目はサイクルが回り始める。<strong>市長発信×高校生育成×わかものC.C.内製化×外部クリエイター誘致</strong>が連動し、「移住・進学・就職」の入口が津山に流れ込む構造に変わっていきます。
+    </p>
+    <div class="layer-body">
+      <ul class="layer-points">
+        <li>
+          <span class="num">01</span>
+          <span class="text">
+            <strong>津山ブランディングの公式化</strong>
+            <span>3年分のコンテンツ資産を集約。「美作国の中核都市」「津山ブランド」の発信を体系化し、観光・移住施策と統合。CREASS制作物が「津山公式の素材ライブラリ」として残ります。</span>
+          </span>
+        </li>
+        <li>
+          <span class="num">02</span>
+          <span class="text">
+            <strong>インフルエンサー・外部クリエイター誘致の本格運用</strong>
+            <span>CREASS既存の44万フォロワーネットワークを活用し、「津山に来たくなる」フレームワークを完成。教育現場・地場産業・観光を素材として、年4-6組の継続コラボを実現。</span>
+          </span>
+        </li>
+        <li>
+          <span class="num">03</span>
+          <span class="text">
+            <strong>受講生との接点を「卒業後」まで伸ばす</strong>
+            <span>受講した高校生の進路（市内進学／市外進学／就職）を市・学校・CREASSで緩やかに把握。市外に出た子には帰省時のイベント・インターン情報を届ける、市内に残った子には次年度の運営側として関わってもらう——この小さな接点の積み重ねが、4年後・8年後のU/Iターン候補リストになります。</span>
+          </span>
+        </li>
+        <li>
+          <span class="num">04</span>
+          <span class="text">
+            <strong>毎年「津山が動いた1年」を市民に返す（アニュアル設計）</strong>
+            <span class="badge">市長報告会連動</span>
+            <span>わかものC.C. が11月に予定している「市長報告会」を、CREASSが演出・コンテンツ化。1年ごとに、高校生が作ったコンテンツ・取材した企業・誘致したクリエイター・座談会で集めた声を、紙＋Webのアニュアルレポートに集約。市民・議会・メディアに毎年返し、次年度予算と次の選挙への信任を、数字と物語の両方で取りに行く設計です。</span>
+          </span>
+        </li>
+      </ul>
+      <div class="layer-visual">
+        <div class="label">3-4年目アウトプット目安</div>
+        <div class="big">「津山が変わった」が<br>市民の肌感覚になる<br>1年</div>
+        <div class="small">数字で語れる「変化」が市民・議会・メディアに見えるフェーズ。次の選挙の最強の実績、かつ、他都市から視察が来る津山モデルの土台にもなります。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cycle-section">
+  <div class="container">
+    <div class="eyebrow">CYCLE — 螺旋として上昇する</div>
+    <h2>1年目の発信が、<span class="light">4年目の人口流入を生む。</span></h2>
+    <p class="lead">
+      3つのレイヤーは独立した施策ではなく、<strong>1つの螺旋構造</strong>として設計されています。
+      市長発信がわかものC.C.の動きを可視化し、高校生育成が街への愛着を生み、外部クリエイターが津山ブランドを増幅する。毎年1巻きずつ上昇していく構造です。
+    </p>
+    <div class="spiral-wrapper">
+      <svg class="spiral-svg" viewBox="0 0 400 520" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="grad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#7fc8f0"/>
+            <stop offset="50%" stop-color="#4a6fa5"/>
+            <stop offset="100%" stop-color="#0a2540"/>
+          </linearGradient>
+        </defs>
+        <!-- Spiral path: bottom to top, expanding upward -->
+        <path d="M 200 480
+                 C 100 450, 100 410, 200 400
+                 C 300 390, 300 360, 200 350
+                 C 90 340, 90 290, 200 280
+                 C 320 270, 320 220, 200 210
+                 C 70 200, 70 140, 200 130
+                 C 340 120, 340 70, 200 60"
+              fill="none" stroke="url(#grad)" stroke-width="3"
+              stroke-linecap="round" />
+        <!-- Year labels -->
+        <g font-family="-apple-system,sans-serif" font-size="12" font-weight="600" fill="#0a2540">
+          <text x="200" y="500" text-anchor="middle">2026 / YEAR 1</text>
+          <text x="200" y="370" text-anchor="middle">2027 / YEAR 2</text>
+          <text x="200" y="245" text-anchor="middle">2028 / YEAR 3</text>
+          <text x="200" y="40" text-anchor="middle">2029 / YEAR 4</text>
+        </g>
+        <!-- Year dots -->
+        <circle cx="200" cy="480" r="6" fill="#7fc8f0"/>
+        <circle cx="200" cy="350" r="6" fill="#4a6fa5"/>
+        <circle cx="200" cy="210" r="6" fill="#2c5f8d"/>
+        <circle cx="200" cy="60" r="8" fill="#0a2540"/>
+      </svg>
+      <div class="spiral-explain">
+        <h3>毎年1巻きずつ、できることが増えていく。</h3>
+        <ul>
+          <li>
+            <span class="y">YEAR 1<br>2026</span>
+            <span class="t"><strong>市長と わかものC.C. の発信を立て直す</strong>市民の「光井市政に対する関心」を取り戻す。座談会・市長報告会が街の話題に。</span>
+          </li>
+          <li>
+            <span class="y">YEAR 2<br>2027</span>
+            <span class="t"><strong>高校生が「街の声」を発信する側に</strong>パイロット校でクリエイター育成。わかものC.C. メンバーも発信スキル習得。</span>
+          </li>
+          <li>
+            <span class="y">YEAR 3<br>2028</span>
+            <span class="t"><strong>外部クリエイター・U/Iターン者が流入</strong>3年積み上げた発信資産を見て、人が津山に集まり始める。</span>
+          </li>
+          <li>
+            <span class="y">YEAR 4<br>2029</span>
+            <span class="t"><strong>「津山モデル」として全国に語られる</strong>1期目の実績として議会・メディア・他都市に説得力を持って提示できる。</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="ref">
+      <div class="ref-label">REFERENCE CASE</div>
+      <h3>すでに、高知で動いています。</h3>
+      <p>
+        高知学園（高知中学・高等学校）では、DXハイスクール採択を見据えた高校生向けカリキュラム——<strong>高1「SNSリテラシー」／高2「動画制作マーケ」／高3「地域PR・キャリア」</strong>——を、CREASSが現場で試験運用中です。広報戦略室長・副校長と直接ご一緒し、行政連携の入口も並走で設計しています。
+      </p>
+      <p style="margin-top:12px"><strong>津山版は、高知の試験運用を踏まえた「2世代目」として設計</strong>。すでにある型を磨いて持ち込みます。</p>
+      <div>
+        <span class="tag">高1：SNSリテラシー</span>
+        <span class="tag">高2：動画制作マーケ</span>
+        <span class="tag">高3：地域PR・キャリア</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="future">
+  <div class="container">
+    <div class="eyebrow">FUTURE SCENE — 2030年の津山</div>
+    <h2>4年後、津山の日常にあるはずの景色。</h2>
+    <p class="lead">数字ではなく、市民が「あ、津山が変わったな」と肌で感じる景色を描いてみました。</p>
+    <div class="future-grid">
+      <div class="future-item">
+        <div class="scene-year">SCENE 01</div>
+        <h3>放課後の津山駅前。制服姿の高校生たちが、街を歩く人にマイクを向けている。</h3>
+        <p>「津山のいいところ、教えてください」——カメラを構えるのも、編集するのも、コメントを返すのも、すべて地元の子たち。1本完成すれば、市公式インスタグラムと自分たちの学校アカウントの両方に並ぶ。「街を発信する側」が、当たり前に高校生の中にいる景色。</p>
+      </div>
+      <div class="future-item">
+        <div class="scene-year">SCENE 02</div>
+        <h3>市役所の打合せ室で、わかものC.C.のメンバーがリールを編集している。</h3>
+        <p>外注ではなく、自分たちで企画から発信まで完結する。座談会や100人インタビューで集めた声が、毎週のように形になって市公式インスタグラムに流れる。「声を、カタチに。」が、月例の作業として定着している。</p>
+      </div>
+      <div class="future-item">
+        <div class="scene-year">SCENE 03</div>
+        <h3>津山の中小企業オーナーが、後継者の話を「諦め」ではなく「楽しみ」で語る。</h3>
+        <p>家業を継ぐと決めた高校生が、毎年クラスに数人いる。アトツギ公開授業と起業塾 津山が4年継続した結果、街の経営者世代が「自分の店をどう次の代に渡すか」を、若い世代と一緒に考えるのが普通になっている。</p>
+      </div>
+      <div class="future-item">
+        <div class="scene-year">SCENE 04</div>
+        <h3>他都市の市長から「津山モデルを学びに行きたい」と視察の打診が来る。</h3>
+        <p>2030年、津山は「地方都市の若者離れに、市長と若手職員と高校生が一緒に向き合った街」として、全国の自治体から学ばれる存在になっている。光井市長は2期目の演説で、4年分の景色を実績として語る。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="last">
+  <div class="container">
+    <div class="eyebrow">FIRST STEP</div>
+    <h2>長い未来を、<span class="light">まず一歩から。</span></h2>
+    <p class="lead">
+      4年間のビジョンは、今日から少しずつ積み上げないと届きません。<br>
+      最初の一歩は、<strong>「市長の外部伴走パートナーとしてCREASSが入る」こと</strong>から始まります。
+    </p>
+    <div class="last-steps">
+      <div class="last-step">
+        <div class="step-no">STEP 01</div>
+        <h4>2026年6月</h4>
+        <p>市長アドバイザー顧問としてCREASSがスタート。Layer 1 の市長発信再設計に着手。</p>
+      </div>
+      <div class="last-step">
+        <div class="step-no">STEP 02</div>
+        <h4>2026年7月</h4>
+        <p>わかものC.C.「市長と座談会」のSNS連動・現場記録設計に伴走開始。</p>
+      </div>
+      <div class="last-step">
+        <div class="step-no">STEP 03</div>
+        <h4>2026年11月</h4>
+        <p>わかものC.C. 市長報告会をCREASSが演出・コンテンツ化。初年度の景色を市民に返す。</p>
+      </div>
+      <div class="last-step">
+        <div class="step-no">STEP 04</div>
+        <h4>2027年4月</h4>
+        <p>Layer 2 高校生クリエイター育成PG 本予算執行開始。パイロット校での本格稼働。</p>
+      </div>
+    </div>
+    <div class="signature">
+      <strong>株式会社CREASS／児玉聡志（こだま聡志）</strong>
+      現役教員 × 44万フォロワー × 経営者の三刀流で、津山に4年伴走させてください。
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
