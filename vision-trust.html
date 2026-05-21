@@ -101,6 +101,53 @@ h2 .light{font-weight:400;color:#4a6fa5}
 .shi-card h3{font-size:17px;font-weight:700;margin-bottom:10px;color:#0a2540;line-height:1.5}
 .shi-card p{font-size:14px;color:#516580;line-height:1.7}
 
+/* About CREASS (independent section) */
+.about{
+  background:#fff;
+  border-top:1px solid #e8eef5;
+  border-bottom:1px solid #e8eef5;
+}
+.about-inner{
+  display:grid;grid-template-columns:280px 1fr;gap:64px;
+  align-items:center;
+}
+.about-logo{
+  display:flex;flex-direction:column;align-items:center;gap:20px;
+  padding:36px 24px;border:1px solid #e8eef5;border-radius:12px;
+  background:linear-gradient(180deg,#fafbfc 0%,#f0f7ff 100%);
+}
+.about-logo img{
+  max-width:200px;width:100%;height:auto;display:block;
+}
+.about-logo .tagline{
+  font-size:11px;color:#4a6fa5;letter-spacing:.15em;font-weight:600;
+  text-align:center;
+}
+.about-content .label{
+  font-size:11px;letter-spacing:.3em;color:#4a6fa5;
+  margin-bottom:14px;font-weight:600;text-transform:uppercase;
+}
+.about-content h2{
+  font-size:30px;line-height:1.4;margin-bottom:18px;
+}
+.about-content .summary{
+  font-size:15px;color:#1a2238;line-height:1.85;margin-bottom:22px;
+}
+.about-content .summary strong{color:#0a2540}
+.about-pillars{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:14px;
+  margin-top:8px;
+}
+.about-pillar{
+  background:#f5f9fd;padding:16px 16px;border-radius:8px;
+  border-left:3px solid #2c5f8d;
+}
+.about-pillar .num{
+  font-size:10px;color:#4a6fa5;letter-spacing:.15em;
+  font-weight:700;margin-bottom:6px;
+}
+.about-pillar .t{font-size:13px;color:#0a2540;line-height:1.6;font-weight:600}
+
 /* Layer sections */
 .layer{position:relative}
 .layer-tag{
@@ -357,6 +404,19 @@ h2 .light{font-weight:400;color:#4a6fa5}
   .last-step p { font-size: 11px !important; line-height: 1.55 !important; }
   .signature { margin-top: 24px !important; padding-top: 20px !important; font-size: 11px !important; }
   .signature strong { font-size: 15px !important; margin-bottom: 4px !important; }
+
+  /* About CREASS (print) */
+  .about-inner { grid-template-columns: 200px 1fr !important; gap: 32px !important; }
+  .about-logo { padding: 20px 16px !important; gap: 12px !important; }
+  .about-logo img { max-width: 140px !important; }
+  .about-logo .tagline { font-size: 9px !important; }
+  .about-content .label { font-size: 9px !important; margin-bottom: 8px !important; }
+  .about-content h2 { font-size: 22px !important; margin-bottom: 12px !important; line-height: 1.4 !important; }
+  .about-content .summary { font-size: 12px !important; margin-bottom: 14px !important; line-height: 1.7 !important; }
+  .about-pillars { gap: 10px !important; }
+  .about-pillar { padding: 12px 12px !important; }
+  .about-pillar .num { font-size: 9px !important; margin-bottom: 4px !important; }
+  .about-pillar .t { font-size: 11px !important; line-height: 1.55 !important; }
 }
 </style>
 </head>
@@ -381,7 +441,7 @@ h2 .light{font-weight:400;color:#4a6fa5}
     <div class="hero-meta">
       <div><strong>提示</strong>株式会社CREASS／児玉聡志</div>
       <div><strong>提示先</strong>光井さとし 津山市長</div>
-      <div><strong>バージョン</strong>v0.7（2026年5月）</div>
+      <div><strong>バージョン</strong>v0.8（2026年5月）</div>
     </div>
   </div>
 </section>
@@ -413,13 +473,6 @@ h2 .light{font-weight:400;color:#4a6fa5}
       <p>津山が抱える課題は2軸。<strong>①どんなにいい施策をしても伝わっていない、発信力の課題</strong>、そして <strong>②ボトムアップの組織風土をつくる課題</strong>。この2軸が同時に動かないと、津山は変わりません。本提案は、その両輪に効く設計にしています。</p>
     </div>
 
-    <div class="context-box">
-      <div class="label">CONTEXT 04 ／ 株式会社CREASSについて</div>
-      <h3>現役教員 × 44万フォロワークリエイター × 経営者の三刀流チーム</h3>
-      <p><strong>代表・児玉聡志（こだま さとし）</strong>は、全国の高校でゲスト講師として登壇する現役教員でありながら、TikTok・Instagramで <strong>総フォロワー44万人・総再生10億回超</strong> のクリエイターとして活動。2025年5月に株式会社CREASSを設立し、教育機関・企業・行政向けにSNS運用・コンテンツ伴走・クリエイター人材育成を提供しています。</p>
-      <p style="margin-top:10px"><strong>本提案でCREASSが伴走させていただきたい価値</strong>：①「ノウハウを録画で売る型」ではなく、現場に入りチームの一員として設計・伴走・提供 ②「掃除」ではなく「育成」 — 内部の発信力を育てる関わり方 ③ コンサル会社・マーケティング会社・広告代理店には生まれない三刀流という独自位置。</p>
-      <p style="margin-top:10px"><strong>主な実績（抜粋）</strong>：2026年 津山市長選挙SNS戦略支援（投票率＋11%・逆転当選に伴走）／「高校SNS日本一モデル」の構築／追手門学院・佛教大学・カンコー学生服・中小企業振興機構ほか講演・研修／複数社で長期顧問・コンサルティングを継続中。</p>
-    </div>
 
     <div class="shi-grid">
       <div class="shi-card">
@@ -436,6 +489,36 @@ h2 .light{font-weight:400;color:#4a6fa5}
         <div class="shi-num">03</div>
         <h3>すべてのひとに、安心な医療と福祉を</h3>
         <p>地域包括ケア、健康寿命日本一、誰も取り残さない共生社会。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about">
+  <div class="container">
+    <div class="about-inner">
+      <div class="about-logo">
+        <img src="assets/logo-h.png" alt="CREASS ロゴ">
+        <div class="tagline">CREATIVE × CLASSROOM</div>
+      </div>
+      <div class="about-content">
+        <div class="label">ABOUT CREASS — 弊社のご紹介</div>
+        <h2>現役教員 × 44万フォロワークリエイター × 経営者の3つを、<span class="light">同じ人間が同時にやっている会社です。</span></h2>
+        <p class="summary"><strong>代表・児玉聡志</strong>は、全国の高校でゲスト講師を務める現役教員でありながら、TikTok・Instagramで <strong>総フォロワー44万人・総再生10億回超</strong> のクリエイター。2025年5月に株式会社CREASSを設立し、教育・企業・行政の各セクターで <strong>SNS運用・コンテンツ伴走・人材育成</strong> を提供しています。</p>
+        <div class="about-pillars">
+          <div class="about-pillar">
+            <div class="num">PILLAR 01</div>
+            <div class="t">現場に入って一緒に作る。<br>外注ではなく伴走者として。</div>
+          </div>
+          <div class="about-pillar">
+            <div class="num">PILLAR 02</div>
+            <div class="t">内部の発信力を育てる。<br>続く仕組みを置いて帰る。</div>
+          </div>
+          <div class="about-pillar">
+            <div class="num">PILLAR 03</div>
+            <div class="t">教員視点 × クリエイター視点 × 経営視点。<br>3つを同時に扱える稀少性。</div>
+          </div>
+        </div>
       </div>
     </div>
   </div>

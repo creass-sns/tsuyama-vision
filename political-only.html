@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>政務領域での伴走について｜CREASS × 光井さとし</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic UI","Meiryo",sans-serif;
+  background:#fafbfc;
+  color:#1a2238;
+  line-height:1.85;
+  font-feature-settings:"palt";
+  letter-spacing:.02em;
+}
+.wrap{max-width:880px;margin:0 auto;padding:80px 40px}
+
+/* Header */
+header{
+  border-bottom:2px solid #0a2540;
+  padding-bottom:28px;margin-bottom:48px;
+}
+.eyebrow{
+  font-size:11px;letter-spacing:.3em;color:#4a6fa5;
+  margin-bottom:14px;font-weight:600;text-transform:uppercase;
+}
+h1{
+  font-size:32px;font-weight:700;line-height:1.4;
+  color:#0a2540;letter-spacing:-.01em;
+}
+.meta{
+  margin-top:20px;font-size:12px;color:#516580;
+  display:flex;gap:32px;flex-wrap:wrap;
+}
+.meta span strong{color:#0a2540;margin-right:6px}
+
+/* Lead callout */
+.lead-box{
+  background:#fff;border:1px solid #d0e3f5;
+  padding:24px 28px;border-radius:8px;
+  border-left:4px solid #2c5f8d;
+  margin-bottom:48px;
+}
+.lead-box p{font-size:15px;color:#1a2238;line-height:1.85}
+
+/* Section */
+section{margin-bottom:48px}
+h2{
+  font-size:20px;font-weight:700;color:#0a2540;
+  padding-bottom:10px;margin-bottom:20px;
+  border-bottom:1px solid #d0e3f5;display:flex;align-items:center;gap:12px;
+}
+h2 .num{
+  display:inline-block;
+  background:#0a2540;color:#fff;
+  width:28px;height:28px;line-height:28px;
+  border-radius:50%;text-align:center;
+  font-size:13px;font-weight:700;
+}
+
+/* Realm split (Do/Don't) */
+.realm-split{
+  display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:8px;
+}
+.realm-card{
+  padding:24px 24px;border-radius:8px;
+  border:1px solid #d0e3f5;background:#fff;
+}
+.realm-card.do{border-left:4px solid #2c5f8d}
+.realm-card.dont{border-left:4px solid #c8c8d0;opacity:.95;background:#f5f7fa}
+.realm-card .label{
+  font-size:11px;letter-spacing:.15em;font-weight:700;
+  margin-bottom:8px;color:#4a6fa5;text-transform:uppercase;
+}
+.realm-card.dont .label{color:#7a8a9c}
+.realm-card h3{
+  font-size:15px;font-weight:700;color:#0a2540;
+  margin-bottom:14px;line-height:1.5;
+}
+.realm-card.dont h3{color:#5a6878}
+.realm-card ul{list-style:none}
+.realm-card li{
+  font-size:13px;color:#1a2238;line-height:1.7;
+  padding:6px 0 6px 18px;position:relative;
+}
+.realm-card.dont li{color:#5a6878}
+.realm-card.do li::before{
+  content:"●";position:absolute;left:0;color:#2c5f8d;font-size:10px;top:9px;
+}
+.realm-card.dont li::before{
+  content:"—";position:absolute;left:0;color:#a8b4c0;font-size:12px;top:7px;
+}
+
+/* Generic list */
+.std-list{list-style:none;margin-top:8px}
+.std-list li{
+  font-size:14px;color:#1a2238;line-height:1.8;
+  padding:8px 0 8px 22px;position:relative;
+}
+.std-list li::before{
+  content:"●";position:absolute;left:0;color:#2c5f8d;font-size:11px;top:11px;
+}
+.std-list li strong{color:#0a2540}
+
+/* Contract table */
+.contract{
+  background:#fff;border:1px solid #d0e3f5;
+  border-radius:8px;overflow:hidden;
+}
+.contract-row{
+  display:grid;grid-template-columns:160px 1fr;
+  border-bottom:1px solid #e8eef5;
+}
+.contract-row:last-child{border-bottom:none}
+.contract-row .k{
+  background:#f5f9fd;padding:14px 18px;
+  font-size:12px;font-weight:700;color:#4a6fa5;letter-spacing:.05em;
+  border-right:1px solid #e8eef5;
+}
+.contract-row .v{
+  padding:14px 18px;font-size:14px;color:#1a2238;line-height:1.7;
+}
+
+/* Company */
+.company{
+  background:#0a2540;color:#fff;
+  padding:32px 32px;border-radius:8px;
+  display:grid;grid-template-columns:200px 1fr;gap:32px;align-items:center;
+}
+.company-logo{
+  background:rgba(255,255,255,.06);padding:24px 16px;border-radius:8px;
+  display:flex;flex-direction:column;align-items:center;gap:12px;
+}
+.company-logo img{max-width:160px;width:100%;height:auto;display:block;filter:brightness(0) invert(1)}
+.company-logo .tagline{font-size:10px;color:#7fc8f0;letter-spacing:.15em;text-align:center;font-weight:600}
+.company h3{
+  font-size:16px;color:#7fc8f0;margin-bottom:8px;font-weight:600;letter-spacing:.05em;
+}
+.company .name{font-size:22px;font-weight:700;margin-bottom:14px}
+.company p{font-size:13px;color:#c5d6e8;line-height:1.8;margin-bottom:10px}
+.company p:last-child{margin-bottom:0}
+.company strong{color:#fff}
+@media(max-width:720px){
+  .company{grid-template-columns:1fr;gap:20px}
+  .company-logo img{max-width:140px}
+}
+
+/* Footer */
+footer{
+  margin-top:48px;padding-top:24px;
+  border-top:1px solid #d0e3f5;
+  font-size:12px;color:#516580;line-height:1.7;
+}
+
+@media print {
+  @page{size:A4 portrait;margin:14mm}
+  body{background:#fff}
+  .wrap{max-width:none;padding:0}
+  section{page-break-inside:avoid}
+  .realm-split,.contract{page-break-inside:avoid}
+  *, *::before, *::after { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+}
+
+@media(max-width:720px){
+  .wrap{padding:40px 24px}
+  h1{font-size:24px}
+  .realm-split{grid-template-columns:1fr;gap:14px}
+  .contract-row{grid-template-columns:120px 1fr}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="eyebrow">FOR INTERNAL SHARING ／ 政務領域での伴走について</div>
+  <h1>政治家・光井さとしの発信を、<br>CREASSが伴走させていただきます。</h1>
+  <div class="meta">
+    <span><strong>共有先想定</strong>市役所 政策部署</span>
+    <span><strong>提示者</strong>光井さとし／株式会社CREASS</span>
+    <span><strong>日付</strong>2026年5月</span>
+  </div>
+</header>
+
+<div class="lead-box">
+  <p>本資料は、<strong>市役所の政策部署のみなさまへの共有を目的</strong>として、2026年7月中旬から <strong>政治家・光井さとし個人</strong> としての発信領域でCREASS（クリアス）が伴走することを、正確にお伝えする目的で作成しています。</p>
+  <p style="margin-top:10px"><strong>本件は政務（個人）の取り組みであり、市の予算は使いません。</strong>公務領域には現時点では入らないことを、本資料で明示しておきます。</p>
+</div>
+
+<section>
+  <h2><span class="num">1</span>「やること」と「やらないこと」を分ける</h2>
+  <div class="realm-split">
+    <div class="realm-card do">
+      <div class="label">DO ／ 政務領域でやること</div>
+      <h3>政治家・光井さとし個人としての発信を、戦略的に設計します。</h3>
+      <ul>
+        <li>市長個人アカウントの発信戦略・運用伴走</li>
+        <li>「市民の声を聴く市長」シリーズなどの企画・撮影サポート</li>
+        <li>スピーチ・会見・対話シーンでの言葉づくりの伴走</li>
+        <li>必要に応じて、わかものC.C. 関連の発信に軽くアドバイス（「10中2」の節度）</li>
+      </ul>
+    </div>
+    <div class="realm-card dont">
+      <div class="label">DON'T ／ 公務領域では現時点で行わない</div>
+      <h3>市の業務・予算・部署運営には、現時点では入りません。</h3>
+      <ul>
+        <li>市役所の通常業務・部署運営への介入</li>
+        <li>市の予算からの委託受注（Phase 1 では行わない）</li>
+        <li>わかものC.C. のコンテンツを「代わりに作る」こと</li>
+        <li>市長が決めるべき政策内容・人事への関与</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2><span class="num">2</span>なぜ、いま政務領域から始めるのか</h2>
+  <ul class="std-list">
+    <li><strong>公務領域に外部を入れる前に、政務領域でCREASSの伴走スタイルを実証する</strong>ことで、市役所のみなさまにも具体的な動き方を見ていただいてから、必要があれば公務領域での連携を相談する流れを取りたいと考えています。</li>
+    <li>政治家としての発信は、選挙時から続いている領域。<strong>市民への伝達設計を「市政運営のインフラ」として整える</strong>ことが、Phase 1 の主目的です。</li>
+    <li>公務領域は <strong>わかものC.C. の活動と並走</strong> しながら、必要なタイミングで市長・部署・C.C. と相談して進めるべき領域だと考えています。</li>
+  </ul>
+</section>
+
+<section>
+  <h2><span class="num">3</span>契約形態・支出源・期間</h2>
+  <div class="contract">
+    <div class="contract-row"><div class="k">領域</div><div class="v">政務（政治家・光井さとし個人）</div></div>
+    <div class="contract-row"><div class="k">契約形態</div><div class="v">業務委託契約・成果物ベース</div></div>
+    <div class="contract-row"><div class="k">支出源</div><div class="v"><strong>後援会・関連法人経由</strong>（市の予算は使用しません）</div></div>
+    <div class="contract-row"><div class="k">期間</div><div class="v">2026年7月中旬 〜（初回3ヶ月トライアル → 評価上、自動更新）</div></div>
+    <div class="contract-row"><div class="k">3ヶ月評価</div><div class="v">2026年10月に効果を市長と確認。<strong>公務領域への拡張は、市長・政策部署・わかものC.C. と相談</strong>して別途検討</div></div>
+    <div class="contract-row"><div class="k">透明性</div><div class="v">業務レポートは年間で確認可能な形式で残します</div></div>
+  </div>
+</section>
+
+<section>
+  <h2><span class="num">4</span>株式会社CREASSについて</h2>
+  <div class="company">
+    <div class="company-logo">
+      <img src="assets/logo-h.png" alt="CREASS">
+      <div class="tagline">CREATIVE × CLASSROOM</div>
+    </div>
+    <div>
+      <h3>COMPANY</h3>
+      <div class="name">株式会社CREASS（クリアス）</div>
+      <p><strong>代表：児玉聡志</strong>　全国の高校でゲスト講師として登壇する現役教員。同時にTikTok・Instagramで <strong>総フォロワー44万人・総再生10億回超</strong> のクリエイター。2025年5月に株式会社CREASSを設立。</p>
+      <p><strong>事業領域</strong>：教育機関・企業・行政向けのSNS運用代行／コンテンツ伴走／クリエイター人材育成／講演・研修</p>
+      <p><strong>津山市での実績</strong>：2026年 津山市長選挙SNS戦略支援（投票率＋11%・逆転当選に伴走）／市民向け講演会2回登壇</p>
+      <p><strong>提供姿勢</strong>：現場に入り、チームの一員として設計・伴走・提供。発信は <strong>「外注で代行する」のではなく「内部の力を育てる」</strong> 関わり方を志向します。</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2><span class="num">5</span>政策部署のみなさまへ</h2>
+  <ul class="std-list">
+    <li>本件について、ご不明な点や懸念点があれば、いつでも市長・CREASS まで遠慮なくお声がけください。</li>
+    <li>公務領域に関連する取り組みは、政策部署のみなさま・わかものC.C. のみなさまの動きを優先しつつ、相談ベースで関わり方を一緒に決めていきたいと考えています。</li>
+    <li>政務と公務の <strong>あいだの領域</strong> で迷う場面が出てきた場合は、早めにご相談させていただきます。</li>
+  </ul>
+</section>
+
+<footer>
+  本資料は、市役所政策部署のみなさまとの相互理解のため、政務領域での外部伴走の概要をまとめた共有資料です。<br>
+  詳細な契約条件・スケジュールは別資料（提案書 v0.2）に記載しています。
+</footer>
+
+</div>
+</body>
+</html>
