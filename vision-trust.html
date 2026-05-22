@@ -326,6 +326,11 @@ h2 .light{font-weight:400;color:#4a6fa5}
   }
   section > .container { width: 100%; }
   section:first-child { page-break-before: avoid; }
+  /* ABOUT CREASS は前ページに収まれば収まる、はみ出れば自動で次ページ */
+  section.about { page-break-before: auto !important; padding: 20px 0 !important; }
+  /* Layer 2 の layer-visual は別ページに切り出す */
+  .layer-2 .layer-body { display: block !important; }
+  .layer-2 .layer-visual { page-break-before: always !important; margin-top: 0 !important; padding: 80px 60px !important; }
   /* セクションが長くなった場合、内部要素単位で改ページ可能 */
   .context-box, .shi-card, .layer-points li, .future-item, .last-step, .about-pillar { page-break-inside: avoid; }
 
@@ -436,7 +441,7 @@ h2 .light{font-weight:400;color:#4a6fa5}
     <div class="hero-meta">
       <div><strong>提示</strong>株式会社CREASS／児玉聡志</div>
       <div><strong>提示先</strong>光井さとし 津山市長</div>
-      <div><strong>バージョン</strong>v0.12（2026年5月）</div>
+      <div><strong>バージョン</strong>v0.13（2026年5月）</div>
     </div>
   </div>
 </section>
@@ -568,7 +573,7 @@ h2 .light{font-weight:400;color:#4a6fa5}
   </div>
 </section>
 
-<section class="layer">
+<section class="layer layer-2">
   <div class="container">
     <span class="layer-tag">LAYER 2 ／ YEAR 2-3（2027-2028）</span>
     <span class="realm-tag administrative">公務領域に本格拡張（Phase 2）</span>
