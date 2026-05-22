@@ -319,19 +319,15 @@ h2 .light{font-weight:400;color:#4a6fa5}
 
   section {
     page-break-before: always;
-    page-break-after: always;
-    page-break-inside: avoid;
     border-bottom: none !important;
-    padding: 36px 0 !important;
-    min-height: 100vh;
-    height: 100vh;
+    padding: 28px 0 !important;
     box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
+    overflow: visible !important;
   }
   section > .container { width: 100%; }
   section:first-child { page-break-before: avoid; }
+  /* セクションが長くなった場合、内部要素単位で改ページ可能 */
+  .context-box, .shi-card, .layer-points li, .future-item, .last-step, .about-pillar { page-break-inside: avoid; }
 
   /* Hero */
   .hero { min-height: 100vh; padding: 36px 0 !important; }
@@ -440,7 +436,7 @@ h2 .light{font-weight:400;color:#4a6fa5}
     <div class="hero-meta">
       <div><strong>提示</strong>株式会社CREASS／児玉聡志</div>
       <div><strong>提示先</strong>光井さとし 津山市長</div>
-      <div><strong>バージョン</strong>v0.11（2026年5月）</div>
+      <div><strong>バージョン</strong>v0.12（2026年5月）</div>
     </div>
   </div>
 </section>
