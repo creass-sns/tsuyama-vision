@@ -101,6 +101,30 @@ h2 .light{font-weight:400;color:#4a6fa5}
 .shi-card h3{font-size:17px;font-weight:700;margin-bottom:10px;color:#0a2540;line-height:1.5}
 .shi-card p{font-size:14px;color:#516580;line-height:1.7}
 
+/* Index (HTML only) */
+.index{background:#fafbfc;border-bottom:1px solid #e8eef5}
+.index h2{font-size:30px;margin-bottom:36px;line-height:1.4;letter-spacing:-.01em;color:#0a2540;font-weight:700}
+.index-list{list-style:none;display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:8px}
+.index-list li{margin:0}
+.index-list a{
+  display:flex;align-items:flex-start;gap:20px;
+  padding:22px 26px;
+  background:#fff;border:1px solid #e8eef5;border-radius:10px;
+  text-decoration:none;color:inherit;
+  transition:all .2s ease;
+}
+.index-list a:hover{
+  background:#f0f7ff;border-color:#7fc8f0;
+  transform:translateY(-2px);
+  box-shadow:0 6px 16px rgba(10,37,64,.08);
+}
+.index-list .num{
+  font-size:18px;font-weight:300;color:#7fc8f0;
+  flex-shrink:0;width:36px;letter-spacing:.02em;line-height:1.3;
+}
+.index-list .t{font-size:13px;line-height:1.65;color:#516580}
+.index-list .t strong{display:block;font-size:15px;color:#0a2540;margin-bottom:4px;font-weight:700;letter-spacing:.02em}
+
 /* About CREASS (independent section) */
 .about{
   background:#fff;
@@ -306,6 +330,14 @@ h2 .light{font-weight:400;color:#4a6fa5}
   section{padding:64px 0}
   .layer-visual{position:static}
 
+  /* INDEX（スマホ） */
+  .index h2{font-size:22px;margin-bottom:24px}
+  .index-list{grid-template-columns:1fr;gap:10px}
+  .index-list a{padding:16px 18px;gap:14px}
+  .index-list .num{width:30px;font-size:16px}
+  .index-list .t strong{font-size:14px}
+  .index-list .t{font-size:12px}
+
   /* About CREASS（スマホ） */
   .about-inner{grid-template-columns:1fr !important;gap:24px;text-align:left}
   .about-logo{padding:24px 20px}
@@ -396,6 +428,8 @@ h2 .light{font-weight:400;color:#4a6fa5}
   }
   section > .container { width: 100%; }
   section:first-child { page-break-before: avoid; }
+  /* INDEXはPDFでは非表示 */
+  section.index { display: none !important; }
   /* ABOUT CREASS は前ページに収まれば収まる、はみ出れば自動で次ページ */
   section.about { page-break-before: auto !important; padding: 20px 0 !important; }
   /* Layer 2 の layer-visual は別ページに切り出す */
@@ -493,7 +527,7 @@ h2 .light{font-weight:400;color:#4a6fa5}
 </head>
 <body>
 
-<section class="hero">
+<section class="hero" id="hero">
   <div class="container">
     <div class="hero-eyebrow">CREASS × 光井市政 × わかものC.C. ／ VISION 2026 — 2030</div>
     <h1>
@@ -510,12 +544,29 @@ h2 .light{font-weight:400;color:#4a6fa5}
     <div class="hero-meta">
       <div><strong>提示</strong>株式会社CREASS／児玉聡志</div>
       <div><strong>提示先</strong>光井さとし 津山市長</div>
-      <div><strong>バージョン</strong>v0.16（2026年5月）</div>
+      <div><strong>バージョン</strong>v0.17（2026年5月）</div>
     </div>
   </div>
 </section>
 
-<section>
+<section class="index" id="index">
+  <div class="container">
+    <div class="eyebrow">INDEX — 目次</div>
+    <h2>このページの構成</h2>
+    <ol class="index-list">
+      <li><a href="#starting-point"><span class="num">01</span><span class="t"><strong>STARTING POINT</strong>津山が「動き出す側」に立っている</span></a></li>
+      <li><a href="#about"><span class="num">02</span><span class="t"><strong>ABOUT CREASS</strong>弊社のご紹介</span></a></li>
+      <li><a href="#layer-1"><span class="num">03</span><span class="t"><strong>LAYER 1 ／ YEAR 1（2026）</strong>市長と わかものC.C. の発信を、市政を動かすメディアに</span></a></li>
+      <li><a href="#layer-2"><span class="num">04</span><span class="t"><strong>LAYER 2 ／ YEAR 1-2（2027-2028）</strong>高校生と わかものC.C. が、街の魅力を発信し続ける</span></a></li>
+      <li><a href="#layer-3"><span class="num">05</span><span class="t"><strong>LAYER 3 ／ YEAR 3-4（2028-2029）</strong>「津山で育てたい・働きたい」が、街の景色になる</span></a></li>
+      <li><a href="#cycle"><span class="num">06</span><span class="t"><strong>CYCLE</strong>螺旋として上昇する</span></a></li>
+      <li><a href="#future"><span class="num">07</span><span class="t"><strong>FUTURE SCENE</strong>2030年の津山</span></a></li>
+      <li><a href="#first-step"><span class="num">08</span><span class="t"><strong>FIRST STEP</strong>長い未来を、まず一歩から</span></a></li>
+    </ol>
+  </div>
+</section>
+
+<section id="starting-point">
   <div class="container">
     <div class="eyebrow">STARTING POINT — 現在地</div>
     <h2>2026年5月、津山は<span class="light">「動き出す側」</span>に立っている。</h2>
@@ -563,7 +614,7 @@ h2 .light{font-weight:400;color:#4a6fa5}
   </div>
 </section>
 
-<section class="about">
+<section class="about" id="about">
   <div class="container">
     <div class="about-inner">
       <div class="about-logo">
@@ -593,7 +644,7 @@ h2 .light{font-weight:400;color:#4a6fa5}
   </div>
 </section>
 
-<section class="layer">
+<section class="layer" id="layer-1">
   <div class="container">
     <span class="layer-tag">LAYER 1 ／ YEAR 1（2026）</span>
     <span class="realm-tag political">主に 政務領域（Phase 1）</span>
@@ -635,7 +686,7 @@ h2 .light{font-weight:400;color:#4a6fa5}
   </div>
 </section>
 
-<section class="layer layer-2">
+<section class="layer layer-2" id="layer-2">
   <div class="container">
     <span class="layer-tag">LAYER 2 ／ YEAR 1-2（2027-2028）</span>
     <span class="realm-tag administrative">公務領域に本格拡張（Phase 2）</span>
@@ -687,7 +738,7 @@ h2 .light{font-weight:400;color:#4a6fa5}
   </div>
 </section>
 
-<section class="layer">
+<section class="layer" id="layer-3">
   <div class="container">
     <span class="layer-tag">LAYER 3 ／ YEAR 3-4（2028-2029）</span>
     <span class="realm-tag administrative">公務領域の深化（Phase 2 +）</span>
@@ -736,7 +787,7 @@ h2 .light{font-weight:400;color:#4a6fa5}
   </div>
 </section>
 
-<section class="cycle-section">
+<section class="cycle-section" id="cycle">
   <div class="container">
     <div class="eyebrow">CYCLE — 螺旋として上昇する</div>
     <h2>1年目の発信が、<span class="light">4年目の人口流入を生む。</span></h2>
@@ -814,7 +865,7 @@ h2 .light{font-weight:400;color:#4a6fa5}
   </div>
 </section>
 
-<section class="future">
+<section class="future" id="future">
   <div class="container">
     <div class="eyebrow">FUTURE SCENE — 2030年の津山</div>
     <h2>4年後、津山の日常にあるはずの景色。</h2>
@@ -844,7 +895,7 @@ h2 .light{font-weight:400;color:#4a6fa5}
   </div>
 </section>
 
-<section class="last">
+<section class="last" id="first-step">
   <div class="container">
     <div class="eyebrow">FIRST STEP</div>
     <h2>長い未来を、<span class="light">まず一歩から。</span></h2>
