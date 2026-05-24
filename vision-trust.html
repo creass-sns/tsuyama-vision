@@ -290,14 +290,84 @@ h2 .light{font-weight:400;color:#4a6fa5}
 .signature strong{display:block;font-size:18px;color:#fff;margin-bottom:8px;letter-spacing:.02em}
 
 @media(max-width:840px){
-  .hero h1{font-size:38px}
-  .hero h1 .accent{font-size:22px}
-  h2{font-size:28px}
+  .container{padding:0 20px}
+  .hero{padding:60px 0}
+  .hero h1{font-size:32px;letter-spacing:0}
+  .hero h1 .accent{font-size:19px;line-height:1.5}
+  .hero-sub{font-size:15px}
+  .hero-tagline{padding:16px 18px;font-size:13px}
+  .hero-eyebrow{font-size:11px;letter-spacing:.2em}
+  h2{font-size:24px;line-height:1.45}
+  .lead{font-size:15px}
+  .eyebrow{font-size:11px;letter-spacing:.2em}
   .shi-grid,.future-grid,.last-steps,.layer-body,.spiral-wrapper{grid-template-columns:1fr;gap:20px}
-  .last-steps{gap:16px}
+  .last-steps{gap:16px;grid-template-columns:1fr}
   .hero-meta{flex-direction:column;gap:20px}
-  section{padding:80px 0}
+  section{padding:64px 0}
   .layer-visual{position:static}
+
+  /* About CREASS（スマホ） */
+  .about-inner{grid-template-columns:1fr !important;gap:24px;text-align:left}
+  .about-logo{padding:24px 20px}
+  .about-logo img{max-width:160px}
+  .about-content h2{font-size:22px;margin-bottom:14px}
+  .about-content .summary{font-size:14px;line-height:1.8}
+  .about-pillars{grid-template-columns:1fr;gap:10px;margin-top:12px}
+  .about-pillar{padding:14px 16px}
+  .about-pillar .t{font-size:13px}
+
+  /* Context box（スマホ） */
+  .context-box{padding:24px 20px}
+  .context-box h3{font-size:17px;line-height:1.55}
+  .context-box p{font-size:14px;line-height:1.8}
+  .context-box .quote{font-size:13px;padding:12px 14px}
+
+  /* Layer pieces（スマホ） */
+  .layer-tag{font-size:11px;padding:6px 14px}
+  .realm-tag{font-size:10px;padding:5px 12px;margin-left:0;margin-top:8px;display:inline-block}
+  .layer-points li{padding:16px 0;gap:14px}
+  .layer-points .num{width:28px;font-size:12px}
+  .layer-points .text strong{font-size:15px}
+  .layer-points .text span{font-size:13px;line-height:1.75}
+  .layer-points .text .badge{font-size:10px;padding:2px 8px;margin-left:6px;margin-top:4px;display:inline-block}
+  .layer-visual{padding:28px 24px}
+  .layer-visual .big{font-size:22px}
+  .layer-visual .small{font-size:13px}
+
+  /* Cycle（スマホ） */
+  .spiral-svg{max-width:280px}
+  .spiral-explain h3{font-size:18px}
+  .spiral-explain li{padding:12px 0;gap:12px;flex-wrap:wrap}
+  .spiral-explain .y{width:auto;font-size:10px}
+  .spiral-explain .t{font-size:13px;width:100%;margin-top:4px}
+
+  /* Reference（スマホ） */
+  .ref{padding:24px 22px}
+  .ref h3{font-size:17px}
+  .ref p{font-size:13px}
+
+  /* Future Scene（スマホ） */
+  .future-item{padding:24px 22px}
+  .future-item h3{font-size:16px;line-height:1.55}
+  .future-item p{font-size:13px}
+
+  /* Last（スマホ） */
+  .last-step{padding:20px 18px}
+  .last-step h4{font-size:14px}
+  .last-step p{font-size:12px}
+  .signature{font-size:12px;margin-top:40px;padding-top:32px}
+  .signature strong{font-size:16px}
+}
+
+@media(max-width:480px){
+  .container{padding:0 16px}
+  .hero h1{font-size:26px}
+  .hero h1 .accent{font-size:16px}
+  h2{font-size:20px}
+  .lead{font-size:14px}
+  .shi-num{font-size:42px}
+  .shi-card h3{font-size:15px}
+  .shi-card p{font-size:13px}
 }
 
 /* ============ PRINT (A4 landscape, slide per section) ============ */
@@ -440,7 +510,7 @@ h2 .light{font-weight:400;color:#4a6fa5}
     <div class="hero-meta">
       <div><strong>提示</strong>株式会社CREASS／児玉聡志</div>
       <div><strong>提示先</strong>光井さとし 津山市長</div>
-      <div><strong>バージョン</strong>v0.15（2026年5月）</div>
+      <div><strong>バージョン</strong>v0.16（2026年5月）</div>
     </div>
   </div>
 </section>
